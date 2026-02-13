@@ -67,27 +67,27 @@ Python, Flask, Django, HTML, CSS, JavaScript, MySQL, Git, GitHub, REST API, Micr
 <h2>Projects</h2>
 
 <div class="card">
-<h3>1. AI Resume Screening System</h3>
+<h3>AI Resume Screening System</h3>
 <p>AI based resume filtering system using NLP & Machine Learning.</p>
 </div>
 
 <div class="card">
-<h3>2. Microservices E-Commerce Website</h3>
+<h3>Microservices E-Commerce Website</h3>
 <p>Advanced scalable ecommerce system built with Flask microservices architecture.</p>
 </div>
 
 <div class="card">
-<h3>3. Expense Tracker Application</h3>
+<h3>Expense Tracker Application</h3>
 <p>Desktop based expense tracker with charts and Excel integration.</p>
 </div>
 
 <div class="card">
-<h3>4. Smart Portfolio Website</h3>
+<h3>Smart Portfolio Website</h3>
 <p>Dynamic personal portfolio with resume download & contact form.</p>
 </div>
 
 <div class="card">
-<h3>5. Remote Code Execution System</h3>
+<h3>Remote Code Execution System</h3>
 <p>Secure web-based system to compile and execute code remotely.</p>
 </div>
 
@@ -96,7 +96,7 @@ Python, Flask, Django, HTML, CSS, JavaScript, MySQL, Git, GitHub, REST API, Micr
 <div class="section">
 <h2>Contact</h2>
 <div class="card">
-Email: deepanshi.dev@example.com
+Email: deepanshi.dev373@gmail.com
 </div>
 </div>
 
@@ -114,7 +114,7 @@ def home():
 
 @app.route("/resume")
 def resume():
-    return send_file("resume.pdf", as_attachment=True)
+    return send_file(os.path.join(os.getcwd(), "resume.pdf"), as_attachment=True)
 
 if __name__ == "__main__":
     app.run(debug=True)
